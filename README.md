@@ -1,13 +1,22 @@
-EX 1 You’re creating a health monitoring device which stores several sensor readings in an array. To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
-DATE: 25.02.2026
-Developed by: PRASANNA A
-RegisterNumber:212223220078
-AIM:
+# EX 1 You’re creating a health monitoring device which stores several sensor readings in an array. To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
+
+## Developed by: PRASANNA A
+## RegisterNumber:212223220078
+## AIM:
 To write a JAVA program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
 
-Algorithm
-Start 2.Read the number of elements (e.g., number of heartbeat readings). 3.Store all readings in an array. 4.Call a recursive function findMin(arr, index) If index == arr.length - 1, return arr[index] Else return min(arr[index], findMin(arr, index + 1)) 5.Print the minimum value returned by the recursive function. 6.End
-Program:
+## Algorithm
+1. Start
+2.Read the number of elements (e.g., number of heartbeat readings).
+3.Store all readings in an array.
+4.Call a recursive function findMin(arr, index)
+If index == arr.length - 1, return arr[index]
+Else return min(arr[index], findMin(arr, index + 1))
+5.Print the minimum value returned by the recursive function.
+6.End 
+
+## Program:
+```
 /*
 Program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
 */
@@ -35,20 +44,31 @@ public class Main {
         System.out.println(getMin(arr, 0, n));
     }
 }
-Output:
-image
-Result:
+```
+
+## Output:
+
+<img width="649" height="254" alt="image" src="https://github.com/user-attachments/assets/e2c774aa-cc92-40f6-acb8-778042dd4078" />
+
+
+## Result:
 Thus the JAVA program to find the minimum value (e.g., lowest heartbeat), implement a recursive method has implemented successfully
 
-Ex2 Count how many times a number appears in an array recursively.
-DATE: 25.02.2026
-AIM:
+
+# Ex2 Count how many times a number appears in an array recursively.
+
+## AIM:
 To write a Java program to Count how many times a number appears in an array recursively.
 
-Algorithm
-1.Start 2.Read the size of the array and input all elements into the array. 3.Read the target number whose frequency you want to count. 4.Call the recursive function countOccurrences(arr, index, target) If index == arr.length, return 0 If arr[index] == target, return 1 + countOccurrences(arr, index + 1, target) Else return countOccurrences(arr, index + 1, target) 5.Display the returned count as the total number of occurrences.
+## Algorithm
+1.Start
+2.Read the size of the array and input all elements into the array.
+3.Read the target number whose frequency you want to count.
+4.Call the recursive function countOccurrences(arr, index, target) If index == arr.length, return 0 If arr[index] == target, return 1 + countOccurrences(arr, index + 1, target) Else return countOccurrences(arr, index + 1, target)
+5.Display the returned count as the total number of occurrences. 
 
-Program:
+## Program:
+```
 /*
 Program Count how many times a number appears in an array recursively.
 */
@@ -98,25 +118,33 @@ public class CountOccurrences {
         scanner.close();
     }
 }
-Output:
-image
-Result:
+```
+
+## Output:
+
+<img width="1027" height="611" alt="image" src="https://github.com/user-attachments/assets/8b339a84-624e-4b20-93c5-7304d201510d" />
+
+
+## Result:
 Thus, the Java program to Count how many times a number appears in an array recursively is implemented successfully.
 
-EX3 Write a program to count the number of digits in an integer.
-DATE: 25.02.2026
-AIM:
+
+# EX3 Write a program to count the number of digits in an integer.
+
+## AIM:
 To write a C program to implement Tower of Hanoi
 
-Algorithm
-Start the program.
-Read an integer from the user.
-Define a recursive function countDigits() that counts digits by dividing the number by 10 each time.
-Base condition: if the number is 0, return 0.
-Recursive step: return 1 + countDigits(number / 10).
-Display the total count of digits.
-Stop the program.
-Program:
+## Algorithm
+1. Start the program.
+2. Read an integer from the user.
+3. Define a recursive function countDigits() that counts digits by dividing the number by 10 each time.
+4. Base condition: if the number is 0, return 0.
+5. Recursive step: return 1 + countDigits(number / 10).
+6. Display the total count of digits.
+7. Stop the program.
+
+## Program:
+```
 /*
 Program to to count the number of digits in an integer
 */
@@ -140,31 +168,38 @@ public class CountDigitsRecursive {
         sc.close();
     }
 }
-Output:
-image
-Result:
+```
+
+## Output:
+
+<img width="341" height="158" alt="image" src="https://github.com/user-attachments/assets/7937432d-e34f-46f6-bfde-6840e7fe8c8f" />
+
+
+## Result:
 Thus, the Java program to to count the number of digits in an integer is implemented successfully.
 
-Ex4 You are given a Java program that performs matrix addition. If Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension, what will be the nature (even/odd/mixed) of the resulting matrix?
-DATE: 25.02.2026
-AIM:
+# Ex4 You are given a Java program that performs matrix addition. If Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension, what will be the nature (even/odd/mixed) of the resulting matrix?
+
+## AIM:
 To write a java function to evaluate weather the given Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension and find the nature of resultant matrrix.
 
-Algorithm
-Start the program.
-Read the dimensions of both matrices (rows and columns).
-Check whether Matrix A and Matrix B have the same dimensions.
-If not, display “Matrices are not of same dimension” and stop.
-Read Matrix A and check each element:
-If every element is odd, continue.
-If any element is even, mark A as invalid and stop further checking.
-If both matrices are valid, compute the resultant matrix (e.g., A + B or any operation specified).
-Determine the nature of the resultant matrix:
-If all elements are odd, print “Resultant matrix is an Odd Matrix”.
-If all elements are even, print “Resultant matrix is an Even Matrix”.
-Display the Resultant Matrix.
-Stop the program.
-Program:
+## Algorithm
+1. Start the program.
+2. Read the dimensions of both matrices (rows and columns).
+3. Check whether Matrix A and Matrix B have the same dimensions.
+4. If not, display “Matrices are not of same dimension” and stop.
+5. Read Matrix A and check each element:
+6. If every element is odd, continue.
+7. If any element is even, mark A as invalid and stop further checking.
+8. If both matrices are valid, compute the resultant matrix (e.g., A + B or any operation specified).
+9. Determine the nature of the resultant matrix:
+10. If all elements are odd, print “Resultant matrix is an Odd Matrix”.
+11. If all elements are even, print “Resultant matrix is an Even Matrix”.
+12. Display the Resultant Matrix.
+13. Stop the program.   
+
+## Program:
+```
 /*
 Program to ind the nature of resultant matrrix.
 */
@@ -206,29 +241,37 @@ public class MatrixAddition {
        
     }
 }
-Output:
-image
-Result:
+```
+
+## Output:
+
+<img width="422" height="624" alt="image" src="https://github.com/user-attachments/assets/34782319-f865-4fe8-a281-f3aed6852160" />
+
+## Result:
 Thus, the java program to evaluate weather the given Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension and find the nature of resultant matrrix is implemented successfully.
 
-Ex5 Count Inversions in an Array
-DATE: 25.02.2026
-AIM:
-To write a Java program to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
 
-Algorithm
-Start the program.
-Declare an integer array arr of size n.
-Read the value of n (number of elements).
-Read n elements and store them in the array arr.
-Initialize a variable count to 0 to store the number of inversions.
-Use two nested loops:
-Outer loop variable i from 0 to n - 1
-Inner loop variable j from i + 1 to n - 1
-For each pair (i, j), if arr[i] > arr[j] and i < j, increment count by 1.
-After all comparisons, print the value of count as the total number of inversions in the array.
-Stop the program.
-Program:
+# Ex5 Count Inversions in an Array
+
+## AIM:
+To write a Java program  to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
+
+## Algorithm
+
+1. Start the program.
+2. Declare an integer array arr of size n.
+3. Read the value of n (number of elements).
+4. Read n elements and store them in the array arr.
+5. Initialize a variable count to 0 to store the number of inversions.
+6. Use two nested loops:
+7. Outer loop variable i from 0 to n - 1
+8. Inner loop variable j from i + 1 to n - 1
+9. For each pair (i, j), if arr[i] > arr[j] and i < j, increment count by 1.
+10. After all comparisons, print the value of count as the total number of inversions in the array.
+11. Stop the program.
+    
+## Program:
+```
 /*
 Program toto Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
 */
@@ -273,7 +316,11 @@ public class CountInversions
         sc.close();
     }
 }
-Output:
-image
-Result:
+```
+
+## Output:
+
+<img width="406" height="243" alt="image" src="https://github.com/user-attachments/assets/6c314097-77b6-4f0e-a6ac-6e5e1cc689f4" />
+
+## Result:
 Thus the Java program to to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < jis implemented successfully.
